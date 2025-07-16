@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { Command } from 'commander';
 import chalk from "chalk";
-import { add, minus } from '@mono/core';
+import { add, minus } from '@tabemono/core';
 
 const program = new Command();
 
@@ -17,6 +17,7 @@ program.command('add')
     .action((a: string, b: string) => {
         console.log(chalk.green(add(+a, +b)));
     });
+
 
 program.command('minus')
     .description('减法')
