@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { Command } from 'commander';
 import chalk from "chalk";
-import { add, minus } from '@mono/core';
+import { add, minus } from '@tabemono/core';
 const program = new Command();
 program
     .name('num cli')
